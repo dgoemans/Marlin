@@ -98,13 +98,13 @@
   #endif
 #elif ENABLED(Y_DUAL_ENDSTOPS)
   #ifndef Y_MIN_PIN
-    #define Y_MIN_PIN                      P1_28  // Y-STOP
+    #define Y_MIN_PIN                      P1_27  // Y-STOP
   #endif
   #ifndef Y_MAX_PIN
     #define Y_MAX_PIN                      P1_25  // E1DET
   #endif
 #else
-  #define Y_STOP_PIN                       P1_28  // Y-STOP
+  #define Y_STOP_PIN                       P1_27  // Y-STOP
 #endif
 
 #ifdef Z_STALL_SENSITIVITY
@@ -116,14 +116,14 @@
   #endif
 #elif ENABLED(Z_MULTI_ENDSTOPS)
   #ifndef Z_MIN_PIN
-    #define Z_MIN_PIN                      P1_27  // Z-STOP
+    #define Z_MIN_PIN                      P1_28  // Z-STOP
   #endif
   #ifndef Z_MAX_PIN
     #define Z_MAX_PIN                      P1_00  // PWRDET
   #endif
 #else
   #ifndef Z_STOP_PIN
-    #define Z_STOP_PIN                     P1_27  // Z-STOP
+    #define Z_STOP_PIN                     P1_28  // Z-STOP
   #endif
 #endif
 
