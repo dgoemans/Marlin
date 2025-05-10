@@ -98,13 +98,13 @@
   #endif
 #elif ENABLED(Y_DUAL_ENDSTOPS)
   #ifndef Y_MIN_PIN
-    #define Y_MIN_PIN                      P1_28  // Y-STOP
+    #define Y_MIN_PIN                      P1_27  // Y-STOP
   #endif
   #ifndef Y_MAX_PIN
     #define Y_MAX_PIN                      P1_25  // E1DET
   #endif
 #else
-  #define Y_STOP_PIN                       P1_28  // Y-STOP
+  #define Y_STOP_PIN                       P1_27  // Y-STOP
 #endif
 
 #ifdef Z_STALL_SENSITIVITY
@@ -116,14 +116,14 @@
   #endif
 #elif ENABLED(Z_MULTI_ENDSTOPS)
   #ifndef Z_MIN_PIN
-    #define Z_MIN_PIN                      P1_27  // Z-STOP
+    #define Z_MIN_PIN                      P1_28  // Z-STOP
   #endif
   #ifndef Z_MAX_PIN
     #define Z_MAX_PIN                      P1_00  // PWRDET
   #endif
 #else
   #ifndef Z_STOP_PIN
-    #define Z_STOP_PIN                     P1_27  // Z-STOP
+    #define Z_STOP_PIN                     P1_28  // Z-STOP
   #endif
 #endif
 
@@ -157,16 +157,16 @@
 //
 // Steppers
 //
-#define X_STEP_PIN                         P2_02
-#define X_DIR_PIN                          P2_06
-#define X_ENABLE_PIN                       P2_01
+#define Y_STEP_PIN                         P2_02
+#define Y_DIR_PIN                          P2_06
+#define Y_ENABLE_PIN                       P2_01
 #ifndef X_CS_PIN
   #define X_CS_PIN                         P1_10
 #endif
 
-#define Y_STEP_PIN                         P0_19
-#define Y_DIR_PIN                          P0_20
-#define Y_ENABLE_PIN                       P2_08
+#define X_STEP_PIN                         P0_19
+#define X_DIR_PIN                          P0_20
+#define X_ENABLE_PIN                       P2_08
 #ifndef Y_CS_PIN
   #define Y_CS_PIN                         P1_09
 #endif
